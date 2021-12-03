@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=titulo%></title>
+</head>
+<body>
+    <form action="./add" method="post">
+        <fieldset>
+            <legend><%=titulo%></legend>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description">
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price">
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="hogar" selected>hogar</option>
+                <option value="casual">casual</option>
+                <option value="deportivo">deportivo</option>
+                <option value="familiar">familiar</option>
+            </select>
+            <label for="qty">Quantity</label>
+            <input type="number" name='qty' id="qty">
+            <input type="submit" value="Save!">
+        </fieldset>
+    </form>
+</body>
+</html>
